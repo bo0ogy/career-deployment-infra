@@ -1,0 +1,119 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+% \usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[left=0.8cm,right=0.8cm,top=0.7cm,bottom=0.7cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+% --- Couleurs ---
+\definecolor{primary}{RGB}{33, 73, 116} % Bleu professionnel
+
+% --- Configuration des liens ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    filecolor=primary,      
+    urlcolor=primary,
+}
+
+% --- Formatage des sections ---
+\titleformat{\section}
+  {\large\bfseries\color{primary}}{\thesection}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{0.7ex}{0.35ex}
+
+\begin{document}
+\pagestyle{empty} % Pas de numéros de page
+
+% --- En-tête ---
+\noindent
+\begin{minipage}[c]{0.78\textwidth}
+    {\Huge \textbf{Hamza Benzina}}\\[0.15cm]
+    {\small Marrakech} \quad \textbar \quad
+    {\small +212 6 98 37 89 21} \quad \textbar \quad
+    {\small \href{mailto:hbenzina484@gmail.com}{hbenzina484@gmail.com}}\\[0.12cm]
+    {\small \href{https://github.com/bo0ogy}{github.com/bo0ogy}} \quad \textbar \quad
+    {\small \href{https://linkedin.com/in/hamza-benzina}{linkedin.com/in/hamza-benzina}}
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{0.18\textwidth}
+    \raggedleft
+    \begin{tikzpicture}
+        \clip (0,0) circle (0.85cm);
+        \node at (0,0) {\includegraphics[width=1.70cm,height=1.70cm]{hamza.jpeg}};
+    \end{tikzpicture}
+\end{minipage}
+
+\vspace{-0.1cm}
+
+% --- PROFIL ---
+\section*{PROFIL}
+\noindent Étudiant en Infrastructures Digitales spécialisé en NetDevOps, Automatisation (IaC) et Opérations de Sécurité. Expérience concrète dans le déploiement sur site d'infrastructures critiques et la conception de topologies programmables. Déploie et configure des environnements d'IA locaux et souverains (air-gapped) pour accélérer la production de scripts d'automatisation sans risque d'exfiltration de données industrielles.
+
+% --- COMPÉTENCES TECHNIQUES ---
+\section*{COMPÉTENCES TECHNIQUES}
+\begin{itemize}[leftmargin=*, itemsep=0.8pt, parsep=0pt, topsep=1.0pt]
+    \item \textbf{NetDevOps \& Programmabilité :} Infrastructure as Code (IaC), Ansible, Modélisation YAML, API REST (Cisco DevNet), Scripts Python (Netmiko/Paramiko), PowerShell, Bash, Git/GitHub.
+    \item \textbf{Architecture Réseau (L1/L2/L3) :} Cisco IOS, Ruijie, Wi-Tek, Commutation (VLAN, STP, EtherChannel), Routage dynamique (OSPF), Adressage IPv4/IPv6, Câblage Cat 6A et liaisons montantes Fibre Optique SFP.
+    \item \textbf{Systèmes \& Sécurité IP :} Windows Server (AD DS, RADIUS/NPS, DNS, DHCP, DFS, WDS, FSRM, IPAM), Linux (CentOS Stream 9, Ubuntu Server), Courants faibles et Sécurité CCTV (NVR Hikvision, PoE).
+    \item \textbf{Supervision \& Télémétrie :} Architecture SIEM (Concepts Wazuh), Supervision (Zabbix, Nagios), Solutions ITSM (GLPI).
+    \item \textbf{Environnements \& Gestion de Projet :} EVE-NG, GNS3, VMware Workstation, Proxmox, Jira, Méthode Agile (Scrum), SQL.
+\end{itemize}
+
+% --- EXPÉRIENCE PROFESSIONNELLE ---
+\section*{EXPÉRIENCE PROFESSIONNELLE}
+\noindent
+\textbf{Stagiaire Systèmes \& Réseaux (NetDevOps)} \hfill \textit{Avril 2026}\\
+\textit{24CONFIG Technology -- Marrakech}
+\begin{itemize}[leftmargin=*, itemsep=0.8pt, parsep=0pt, topsep=1.0pt]
+    \item \textbf{Déploiement Critique :} Intégration physique et logique d'infrastructures réseaux complexes sous marchés publics réglementés (Justice et Milieu Pénitentiaire).
+    \item \textbf{Câblage Structuré :} Planification, tirage et raccordement normé (T568B) de 118 câbles cuivre Cat 6A et gestion des interconnexions fibre optique.
+    \item \textbf{Sécurité IP :} Configuration de serveurs RADIUS (NPS Windows Server) pour le contrôle d'accès réseau centralisé.
+    \item \textbf{Diagnostic Avancé :} Recette de conformité de la couche physique au multimètre pour éliminer les faux négatifs d'atténuation.
+\end{itemize}
+
+\vspace{-0.15cm}
+\noindent
+\textbf{Technicien Déploiement \& Automatisation} \hfill \textit{Juillet 2025}\\
+\textit{ISGI Azli -- Marrakech}
+\begin{itemize}[leftmargin=*, itemsep=0.8pt, parsep=0pt, topsep=1.0pt]
+    \item \textbf{Provisioning Automatisé :} Conception et durcissement d'une image système Windows Master personnalisée avec suites logicielles requises.
+    \item \textbf{Déploiement de Masse (WDS) :} Déploiement simultané via Windows Deployment Services sur l'ensemble du parc informatique de l'institut.
+    \item \textbf{IaC Initiale :} Modélisation logique du brassage de l'établissement sous format structuré (YAML) comme base d'automatisation.
+\end{itemize}
+
+% --- PROJETS TECHNIQUES & R&D ---
+\section*{PROJETS TECHNIQUES \& R\&D}
+\noindent
+\textbf{Automatisation Réseau multi-vendeurs par l'approche IaC (EVE-NG / Ansible / Python)}\\
+Conception d'un modèle YAML unifié (SSOT). Écriture de playbooks Ansible et scripts Python (Netmiko) pour instancier les VLANs, accès, trunks et routage dynamique sur Cisco et Ruijie. Injection automatique par API dans GLPI pour le support N1.\\[2.5pt]
+\textbf{Advanced IaC \& Déploiement d'Agents d'Entreprise (Ansible / Python / Nmap)}\\
+Conception d'un pipeline de provisionnement automatisé. Scripting Python couplé à Nmap pour scanner le réseau, identifier les systèmes d'exploitation (OS fingerprinting) et générer dynamiquement un inventaire YAML. Déploiement de masse conditionnel (Ansible) des agents Zabbix, GLPI et Wazuh via SSH/WinRM, avec vérification de la télémétrie par API REST.\\[2.5pt]
+\textbf{Hub Centralisé d'Observabilité et de Sécurité (VMware Workstation / Bash / PowerShell)}\\
+Supervision (Zabbix/Wazuh SIEM) et déploiement automatisé silencieux d'agents. Durcissement d'hôtes Linux par politiques strictes Zero-Trust sur le montage automatique et l'isolation logique des périphériques de blocs (anti-autorun/anti-badUSB).
+
+% --- CERTIFICATIONS ---
+\section*{CERTIFICATIONS}
+\begin{itemize}[leftmargin=*, itemsep=0.8pt, parsep=0pt, topsep=1.0pt]
+    \item \textbf{Cursus Majeurs (En cours de validation - 2026) :} Cisco DevNet Associate \textbar{} Cisco CyberOps Associate.
+    \item \textbf{Certificats Validés :} CCNA (ITN \textbar{} SRWE \textbar{} ENSA) \textbar{} Python Essentials 1 \& 2 \textbar{} Linux Essentials \& Linux 2 \textbar{} Intro to Modern AI \textbar{} Intro Cybersécurité \textbar{} IT Essentials.
+\end{itemize}
+
+% --- FORMATION ---
+\section*{FORMATION}
+\noindent \textbf{Technicien Spécialisé : Infrastructures Digitales (Systèmes \& Réseaux)} \hfill \textit{ISGI Marrakech -- 2024--2026}\\
+\noindent \textbf{Faculté des Sciences Semlalia -- Univ. Cadi Ayyad (Sciences Maths Appliquées)} \hfill \textit{2022--2024}\\
+\noindent \textbf{Classes Préparatoires (ECS)} \hfill \textit{Lycée Reda Slaoui Agadir -- 2020--2022}\\
+\noindent \textbf{Baccalauréat : Sciences Mathématiques} \hfill \textit{Lycée Mohamed VI Marrakech -- 2019--2020}
+
+% --- LANGUES ---
+\section*{LANGUES}
+\noindent \textbf{Arabe :} Maternelle \quad \textbar \quad \textbf{Français :} C1 (Professionnel) \quad \textbar \quad \textbf{Anglais :} C1 (Technique avancé)
+
+\end{document}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Administrateur Systèmes & Réseaux</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        /* --- A4 One-Page Lock --- */
+        @page {
+            size: A4 portrait;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+            margin: 0;
+        }
+
+        .cv-page {
+            width: 210mm;
+            min-height: 297mm;
+            max-height: 297mm;
+            overflow: hidden;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media screen {
+            body { padding: 20px 0; }
+            .cv-page {
+                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            }
+        }
+
+        @media print {
+            body { background-color: white; padding: 0; }
+            .cv-page {
+                box-shadow: none;
+                margin: 0;
+                max-height: 297mm;
+                overflow: hidden;
+            }
+        }
+
+        /* --- Perfect A4 Balanced Fit --- */
+        .sidebar { width: 33%; padding: 22px 16px; font-size: 11px; }
+        .main-content { width: 67%; padding: 24px 22px; font-size: 11.5px; }
+        
+        .sidebar h1 { font-size: 1.25rem; margin-bottom: 2px; }
+        .sidebar h2 { font-size: 0.78rem; margin-bottom: 8px; padding-bottom: 4px; }
+        .sidebar h3 { font-size: 0.72rem; margin-bottom: 3px; }
+        
+        .main-content h2.section-title { font-size: 0.85rem; margin-bottom: 6px; padding-bottom: 4px; }
+        .main-content h3 { font-size: 0.78rem; }
+
+        .skill-tag {
+            transition: all 0.2s ease;
+            font-size: 0.62rem;
+            padding: 2px 6px;
+        }
+        .skill-tag:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- CV Container — Locked to A4 one page -->
+    <div class="cv-page bg-white">
+        
+        <!-- Sidebar (Left Column) -->
+        <aside class="sidebar bg-slate-900 text-white flex flex-col justify-between">
+            
+            <div class="flex flex-col gap-5">
+                <!-- Photo Placeholder & Identity -->
+                <div class="flex flex-col items-center text-center">
+                    <!-- Profile Photo Container -->
+                    <div class="w-24 h-24 rounded-full border-2 border-blue-400 bg-slate-800 overflow-hidden mb-3 relative">
+                        <img src="hamza.jpeg" alt="Hamza Benzina" class="w-full h-full object-cover">
+                    </div>
+                    <h1 class="text-xl font-bold tracking-tight mb-1 uppercase text-white">Hamza Benzina</h1>
+                    <p class="text-slate-400 text-xs italic">Trilingue : FR / EN (C1) / AR</p>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <ul class="text-[11px] space-y-2 text-slate-300">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-envelope w-5 text-blue-400"></i>
+                            <a href="mailto:hbenzina484@gmail.com" class="hover:text-white">hbenzina484@gmail.com</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone w-5 text-blue-400"></i>
+                            <span>+212 6 98 37 89 21</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-map-marker-alt w-5 text-blue-400"></i>
+                            <span>Marrakech, Maroc</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fab fa-linkedin w-5 text-blue-400"></i>
+                            <a href="https://linkedin.com/in/hamza-benzina" class="hover:text-white">linkedin.com/in/hamza-benzina</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fab fa-github w-5 text-blue-400"></i>
+                            <a href="https://github.com/bo0ogy" class="hover:text-white">github.com/bo0ogy</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skills Matrix -->
+                <div>
+                    <h2 class="text-sm font-semibold border-b border-slate-700 pb-2 mb-3.5 uppercase tracking-wider text-blue-400">
+                        <i class="fas fa-tools mr-2"></i> Skill Matrix
+                    </h2>
+                    
+                    <div class="mb-3.5">
+                        <h3 class="text-xs font-medium mb-2 text-slate-200">ITSM & Agilité</h3>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="skill-tag bg-slate-800 text-slate-300 rounded border border-slate-700">ITIL v4</span>
+                            <span class="skill-tag bg-slate-800 text-slate-300 rounded border border-slate-700">GLPI / ServiceNow</span>
+                            <span class="skill-tag bg-slate-800 text-slate-300 rounded border border-slate-700">Jira Service Desk</span>
+                            <span class="skill-tag bg-slate-800 text-slate-300 rounded border border-slate-700">CMDB & SLA</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3.5">
+                        <h3 class="text-xs font-medium mb-2 text-slate-200">SysAdmin & Cloud</h3>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="skill-tag bg-slate-800 text-slate-300 rounded border border-slate-700">Windows Server</span>
+                            <span class="skill-tag bg-slate-800 text-slate-300 rounded border border-slate-700">AD/DNS/DHCP</span>
+                            <span class="skill-tag bg-slate-800 text-slate-300 rounded border border-slate-700">Linux (Ubuntu, CentOS)</span>
+                            <span class="skill-tag bg-slate-800 text-slate-300 rounded border border-slate-700">PowerShell</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3.5">
+                        <h3 class="text-xs font-medium mb-2 text-slate-200">Réseaux & Sécurité</h3>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="skill-tag bg-slate-800 text-slate-300 rounded border border-slate-700">Cisco IOS / Ruijie</span>
+                            <span class="skill-tag bg-slate-800 text-slate-300 rounded border border-slate-700">Zabbix / Nagios</span>
+                            <span class="skill-tag bg-slate-800 text-slate-300 rounded border border-slate-700">Wazuh SIEM</span>
+                            <span class="skill-tag bg-slate-800 text-slate-300 rounded border border-slate-700">CCTV IP / RADIUS</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xs font-medium mb-2 text-slate-200">Automatisation & Veille</h3>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="skill-tag bg-slate-800 text-slate-300 rounded border border-slate-700">Python / Bash</span>
+                            <span class="skill-tag bg-slate-800 text-slate-300 rounded border border-slate-700">Ansible / Terraform</span>
+                            <span class="skill-tag bg-slate-800 text-slate-300 rounded border border-slate-700">Netmiko / Paramiko</span>
+                            <span class="skill-tag bg-slate-800 text-slate-300 rounded border border-slate-700">Ollama (LLMs)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications (pushed to bottom) -->
+            <div class="mt-4">
+                <h2 class="text-sm font-semibold border-b border-slate-700 pb-2 mb-3 uppercase tracking-wider text-blue-400">
+                    <i class="fas fa-certificate mr-2"></i> Certifications
+                </h2>
+                <ul class="space-y-2.5 text-[11px]">
+                    <li>
+                        <div class="text-blue-300 font-medium">Cursus Majeurs (2026)</div>
+                        <div class="text-slate-400 text-[10px] leading-snug">Cisco DevNet Associate</div>
+                        <div class="text-slate-400 text-[10px] leading-snug">Cisco CyberOps Associate</div>
+                    </li>
+                    <li>
+                        <div class="text-blue-300 font-medium">Certificats Validés</div>
+                        <div class="text-slate-400 text-[10px] leading-snug">CCNA (ITN | SRWE | ENSA)</div>
+                        <div class="text-slate-400 text-[10px] leading-snug">Linux Essentials | Python Essentials</div>
+                        <div class="text-slate-400 text-[10px] leading-snug">Intro Cybersécurité | Intro to AI</div>
+                        <div class="text-slate-400 text-[10px] leading-snug">IT Essentials | Bases Matériel Info</div>
+                    </li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <!-- Main Content (Right Column) -->
+        <main class="main-content bg-white flex flex-col justify-between">
+            
+            <div class="flex flex-col gap-3">
+                <!-- Header Title -->
+                <header class="border-b border-slate-200 pb-2.5">
+                    <h2 class="text-xl font-bold text-slate-800 leading-tight">
+                        Administrateur Systèmes & Réseaux
+                    </h2>
+                    <h3 class="text-sm font-semibold text-blue-600 mt-0.5 uppercase tracking-wider">
+                        Administration & Gestion des Services (ITSM)
+                    </h3>
+                </header>
+
+                <!-- Profil -->
+                <section>
+                    <h2 class="text-sm font-bold border-b border-slate-200 pb-1.5 mb-2 text-slate-800 uppercase flex items-center gap-2">
+                        <i class="fas fa-user-tie text-blue-600"></i> Profil
+                    </h2>
+                    <p class="text-[11px] text-slate-600 leading-snug text-justify">
+                        Diplômé en Infrastructures Digitales (Option Systèmes & Réseaux) de l'ISGI Marrakech, spécialisé dans le maintien en condition opérationnelle des parcs informatiques d'entreprise. Sensibilisé aux processus ITIL v4. Expérience terrain en déploiement d'infrastructures critiques, administration Windows Server (AD, DHCP, DNS, WDS) et Linux, supervision centralisée (Zabbix, GLPI) et gestion des incidents (Support N1/N2). Orienté résolution rapide (MTTR), respect des SLA et continuité de service.
+                    </p>
+                </section>
+
+                <!-- Expérience Professionnelle -->
+                <section>
+                    <h2 class="text-sm font-bold border-b border-slate-200 pb-1 mb-2 text-slate-800 uppercase flex items-center gap-2">
+                        <i class="fas fa-briefcase text-blue-600"></i> Expérience Professionnelle
+                    </h2>
+                    
+                    <!-- Job 1 -->
+                    <div class="mb-3.5 relative">
+                        <div class="flex justify-between items-start mb-1">
+                            <div>
+                                <h3 class="font-bold text-slate-800 text-xs">Stagiaire Systèmes & Réseaux (NetDevOps)</h3>
+                                <div class="text-blue-600 font-medium text-xs">24CONFIG Technology, Marrakech</div>
+                            </div>
+                            <span class="text-[10px] font-semibold bg-slate-100 text-slate-600 px-2.5 py-0.5 rounded-full whitespace-nowrap">Avril 2026</span>
+                        </div>
+                        <ul class="list-disc list-outside ml-4 mt-0.5 space-y-0.5 text-xs text-slate-600 leading-snug">
+                            <li><span class="font-medium text-slate-700">Support & Déploiement N2 :</span> Déploiement d'infrastructures réseaux complexes sous contraintes de marchés publics (Justice et Milieu Pénitentiaire).</li>
+                            <li><span class="font-medium text-slate-700">Sécurité des Accès :</span> Configuration de serveurs d'authentification centralisée RADIUS (NPS Windows Server) pour le contrôle d'accès réseau.</li>
+                            <li><span class="font-medium text-slate-700">Segmentation & CCTV :</span> Configuration d'équipements Cisco/Ruijie, isolation par VLANs et administration de caméras IP PoE sur serveurs NVR.</li>
+                            <li><span class="font-medium text-slate-700">Gestion des Incidents :</span> Recette de conformité physique pour éliminer les faux négatifs d'atténuation réseau (réduction des tickets incidents).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="mb-1 relative">
+                        <div class="flex justify-between items-start mb-1">
+                            <div>
+                                <h3 class="font-bold text-slate-800 text-xs">Technicien Déploiement & Automatisation</h3>
+                                <div class="text-blue-600 font-medium text-xs">ISGI Azli, Marrakech</div>
+                            </div>
+                            <span class="text-[10px] font-semibold bg-slate-100 text-slate-600 px-2.5 py-0.5 rounded-full whitespace-nowrap">Juillet 2025</span>
+                        </div>
+                        <ul class="list-disc list-outside ml-4 mt-0.5 space-y-0.5 text-xs text-slate-600 leading-snug">
+                            <li><span class="font-medium text-slate-700">Provisioning :</span> Conception et durcissement d'une image système Windows Master personnalisée incluant la suite logicielle requise.</li>
+                            <li><span class="font-medium text-slate-700">Déploiement WDS :</span> Clonage et déploiement simultané via les services Windows sur l'ensemble du parc informatique de l'établissement.</li>
+                            <li><span class="font-medium text-slate-700">Industrialisation (IaC) :</span> Initialisation d'une démarche d'automatisation via Ansible, Terraform et programmabilité réseau (Python, Netmiko).</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Projets & R&D -->
+                <section>
+                    <h2 class="text-sm font-bold border-b border-slate-200 pb-1 mb-2 text-slate-800 uppercase flex items-center gap-2">
+                        <i class="fas fa-rocket text-blue-600"></i> Projets Techniques & R&D
+                    </h2>
+                    
+                    <div class="grid grid-cols-2 gap-2">
+                        <!-- Project 1 -->
+                        <div class="bg-slate-50 p-2 rounded-lg border border-slate-100">
+                            <h3 class="font-bold text-slate-800 text-[10.5px] mb-0.5">Audit Automatisé & Durcissement (Cisco / Windows / Linux)</h3>
+                            <p class="text-[9.5px] text-slate-600 leading-snug">
+                                Pilotage de l'audit de sécurité réseau via Scrum/Kanban (Jira). Déploiement de politiques de sécurité applicatives sur terminaux Linux/Windows et vérification des configurations Cisco IOS via CLI.
+                            </p>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="bg-slate-50 p-2 rounded-lg border border-slate-100">
+                            <h3 class="font-bold text-slate-800 text-[10.5px] mb-0.5">Automatisation du Déploiement d'Agents (Zabbix/GLPI)</h3>
+                            <p class="text-[9.5px] text-slate-600 leading-snug">
+                                Conception d'un pipeline de provisionnement. Scripting Python (Nmap) pour scanner le réseau et générer un inventaire dynamique. Déploiement massif d'agents de supervision et de gestion de parc via Ansible (SSH/WinRM).
+                            </p>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="bg-slate-50 p-2 rounded-lg border border-slate-100">
+                            <h3 class="font-bold text-slate-800 text-[10.5px] mb-0.5">Pipeline de Consolidation (+17 000 recs)</h3>
+                            <p class="text-[9.5px] text-slate-600 leading-snug">
+                                Développement d'un moteur asynchrone (Apps Script / JS) avec parseur regex compilé pour normaliser +17 000 enregistrements bruts en inventaire structuré, avec checkpoints persistants en cloud.
+                            </p>
+                        </div>
+
+                        <!-- Project 4 -->
+                        <div class="bg-slate-50 p-2 rounded-lg border border-slate-100">
+                            <h3 class="font-bold text-slate-800 text-[10.5px] mb-0.5">Framework de Hardening Linux (Bash)</h3>
+                            <p class="text-[9.5px] text-slate-600 leading-snug">
+                                Écriture de scripts appliquant le Zero-Trust sur les points de montage du noyau. Développement d'un outil anti-autorun isolant les clés USB suspectes pour bloquer l'exécution de code non autorisé.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Formation (pushed to bottom) -->
+            <section class="mt-3 border-t border-slate-200 pt-2.5">
+                <h2 class="text-sm font-bold border-b border-slate-200 pb-1 mb-2 text-slate-800 uppercase flex items-center gap-1.5">
+                    <i class="fas fa-graduation-cap text-blue-600"></i> Formation Initiale
+                </h2>
+                <div class="space-y-2 text-xs">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-slate-800">Technicien Spécialisé : Infrastructures Digitales</h3>
+                            <div class="text-slate-500">ISGI Marrakech — <span class="italic text-[10px]">Option Systèmes & Réseaux</span></div>
+                        </div>
+                        <span class="text-[10.5px] font-semibold text-slate-500 whitespace-nowrap ml-2">2024 - 2026</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-slate-800">Faculté des Sciences Semlalia -- Univ. Cadi Ayyad</h3>
+                            <div class="text-slate-500">Marrakech — <span class="italic text-[10px]">Sciences Maths Appliquées</span></div>
+                        </div>
+                        <span class="text-[10.5px] font-semibold text-slate-500 whitespace-nowrap ml-2">2022 - 2024</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-slate-800">Classes Préparatoires (ECS)</h3>
+                            <div class="text-slate-500">Lycée Reda Slaoui Agadir</div>
+                        </div>
+                        <span class="text-[10.5px] font-semibold text-slate-500 whitespace-nowrap ml-2">2020 - 2022</span>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-slate-800">Baccalauréat : Sciences Mathématiques</h3>
+                            <div class="text-slate-500">Lycée Mohamed VI Marrakech</div>
+                        </div>
+                        <span class="text-[10.5px] font-semibold text-slate-500 whitespace-nowrap ml-2">2019 - 2020</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
