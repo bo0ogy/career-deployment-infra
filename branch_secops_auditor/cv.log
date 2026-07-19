@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Debian) (preloaded format=pdflatex 2026.7.6)  19 JUL 2026 04:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Debian) (preloaded format=pdflatex 2026.7.6)  19 JUL 2026 04:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -584,14 +584,14 @@ LaTeX Font Info:    ... okay on input line 31.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(22.76228pt, 551.9833pt, 22.76228pt)
-* v-part:(T,H,B)=(19.91684pt, 805.21317pt, 19.91684pt)
+* v-part:(T,H,B)=(11.38092pt, 822.285pt, 11.38092pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=551.9833pt
-* \textheight=805.21317pt
+* \textheight=822.285pt
 * \oddsidemargin=-49.5077pt
 * \evensidemargin=-49.5077pt
-* \topmargin=-89.35315pt
+* \topmargin=-97.88907pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -637,36 +637,6 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4
-5.
-
-(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 4
-5.
-
-(/usr/share/texmf/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-45.
-
-(/usr/share/texmf/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-45.
-
-(/usr/share/texmf/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 45.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 45.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 45.
 <../master_ssot/hamza.jpeg, id=11, 770.88pt x 891.33pt>
 File: ../master_ssot/hamza.jpeg Graphic file (type jpg)
 <use ../master_ssot/hamza.jpeg>
@@ -681,7 +651,7 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc} <../master_
-ssot/hamza.jpeg>] [2] (./cv.aux)
+ssot/hamza.jpeg>] (./cv.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-05-15>
@@ -690,21 +660,21 @@ Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 20396 strings out of 469330
- 380205 string characters out of 5466445
- 784566 words of memory out of 5000000
- 48905 multiletter control sequences out of 15000+600000
- 665114 words of font info for 60 fonts, out of 8000000 for 9000
+ 20315 strings out of 469330
+ 378474 string characters out of 5466445
+ 785557 words of memory out of 5000000
+ 48847 multiletter control sequences out of 15000+600000
+ 654104 words of font info for 50 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,8n,94p,457b,643s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></us
 r/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmri10.pfb>
-Output written on cv.pdf (2 pages, 209132 bytes).
+Output written on cv.pdf (1 page, 208764 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
+ 51 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
+ 2 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
